@@ -1,15 +1,16 @@
 var painel = document.querySelector('#pai')
 
-
+var rel
 
 function numeros(num) {
     
-    pai.value = num + pai.value
-    console.log(num)
+    rel = pai.value = pai.value + num
+    
+    console.log(rel)
 }
 
 function apagar() {
-    
+
 }
 
 function somar(sinal) {
@@ -23,11 +24,16 @@ function somar(sinal) {
         pai.value = menos + pai.value
     }
     else if (sinal == 3) {
-        vezes = '-'
+        vezes = '×'
         pai.value = vezes + pai.value
     }
     else if (sinal == 4) {
-        divi = '-'
+        divi = '/'
         pai.value = divi + pai.value
+    }
+    else if (sinal == 19) {
+        resl = eval(rel)
+        pai.value = resl
+        console.log(resl)
     }
 }
