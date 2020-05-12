@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="conteiner"> <p id="titulo">CALCULADORA</p>
+        <div class="painel"><input type="text" id="pai"></div>
+        <div class="controle">
+            <div class="sinal">
+                <div class="botao_sinal">
+                    <input type="button" value="+" class="btnsinal" onclick="somar(1)">
+                    <input type="button" value="-" class="btnsinal" onclick="somar(2)">
+                    <input type="button" value="×" class="btnsinal"onclick="somar(3)">
+                    <input type="button" value="/" class="btnsinal" onclick="somar(4)">
+                </div>
+            </div>
+            <div class="apagar">
+                <div class="apagar_sinal">
+                    <input type="button" value="CC"  class="btn_apagar" onclick="apagar(1)">
+                    <input type="button" value="," class="btn_apagar"  onclick="apagar(2)">
+                </div>
+            </div>
+            <div class="botao">
+                <div class="botao_sinal"> 
+                    <input type="button" value="1" class="btn_numero" onclick="numeros(value)">
+                    <input type="button" value="2" class="btn_numero" onclick="numeros(value)">
+                    <input type="button" value="3" class="btn_numero" onclick="numeros(value)">
+                    <input type="button" value="4" class="btn_numero" onclick="numeros(value)">
+                    <input type="button" value="5" class="btn_numero" onclick="numeros(value)">
+                    <input type="button" value="6" class="btn_numero" onclick="numeros(value)">
+                    <input type="button" value="7" class="btn_numero" onclick="numeros(value)">
+                    <input type="button" value="8" class="btn_numero" onclick="numeros(value)">
+                    <input type="button" value="9" class="btn_numero" onclick="numeros(value)">
+                    <input type="button" value="0" class="btn_numero" onclick="numeros(value)">
+                    <input type="button" value="00" class="btn_numero" onclick="numeros(value)">
+                    <input type="button" value="=" class="btn_numero" onclick="somar(19)">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
