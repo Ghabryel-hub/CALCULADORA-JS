@@ -15,7 +15,6 @@ function apagar(ponto) {
         pai.value = + pai.value + _ponto
     }
     else if (ponto == 1) {
-        rel = ''
         pai.value = ''
     }
 
